@@ -2,20 +2,12 @@
 
 one:
   title: MyString
-  string: MyString
   author: MyString
-  string: MyString
   isbn: MyString
-  string: MyString
-  available: MyString
-  boolean: MyString
+  available: true
 
 two:
   title: MyString
-  string: MyString
   author: MyString
-  string: MyString
   isbn: MyString
-  string: MyString
-  available: MyString
-  boolean: MyString
+  available: true
