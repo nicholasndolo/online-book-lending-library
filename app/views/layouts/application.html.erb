@@ -22,9 +22,31 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="bg-gray-900 h-full">
-    <main class="container mx-auto mt-28 px-5 flex">
-      <%= yield %>
-    </main>
+  <body class="h-full bg-gray-900">
+    <div class="min-h-full">
+      <nav class="bg-gray-800 shadow-sm">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="flex h-16 justify-between">
+            <div class="flex">
+              <div class="logo">
+              </div>
+              <div class="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
+                <%= link_to "Books", books_path, class: "inline-flex items-center border-b-2 border-indigo-400 px-1 pt-1 text-sm font-medium text-gray-100" %>
+              </div>
+            </div>
+            <div class="Login Logout hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
+            <div>
+          </div>
+        </div>  
+      </nav>
+
+      <div class="py-10">
+        <main>
+          <div class="mx-auto max-w-7xl">
+            <%= yield %>
+          </div>
+        </main>
+      </div>
+    </div>
   </body>
 </html>

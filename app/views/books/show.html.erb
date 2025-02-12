@@ -2,9 +2,7 @@
 
 <%= render @book %>
 
-<div>
-  <%= link_to "Edit this book", edit_book_path(@book) %> |
-  <%= link_to "Back to books", books_path %>
-
-  <%= button_to "Destroy this book", @book, method: :delete %>
-</div>
+    <%= link_to "Edit", edit_book_path(@book), class: "mt-2 rounded-lg py-3 px-5 bg-black text-black inline-block font-medium hover:bg-black" %>
+    <%= link_to "Back", books_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-700 text-black inline-block font-medium" %>
+    <div class="inline-block ml-2">
+      <%= button_to "Delete", @book, method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-700 text-black font-medium" %>
